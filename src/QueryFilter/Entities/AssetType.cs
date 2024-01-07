@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Samples.Common;
 
-namespace Samples.Entities
+namespace QueryFilter.Entities
 {
     public class AssetType : ISoftDelete
     {

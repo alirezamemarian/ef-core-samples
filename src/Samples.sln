@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryFilter", "QueryFilter\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{00F77E4E-C1CC-41E8-911C-30CDC09750C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Entities", "Shared\Samples.Entities\Samples.Entities.csproj", "{31C54A01-FAE2-44E7-A663-320298BD2B5B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples.Common", "Shared\Samples.Common\Samples.Common.csproj", "{9DC0082F-040E-46DC-9169-5A27F3DC3BBF}"
 EndProject
 Global
@@ -21,10 +19,6 @@ Global
 		{E1729C74-ABCD-438F-8816-B0CF31DC2508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1729C74-ABCD-438F-8816-B0CF31DC2508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1729C74-ABCD-438F-8816-B0CF31DC2508}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31C54A01-FAE2-44E7-A663-320298BD2B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31C54A01-FAE2-44E7-A663-320298BD2B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31C54A01-FAE2-44E7-A663-320298BD2B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31C54A01-FAE2-44E7-A663-320298BD2B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9DC0082F-040E-46DC-9169-5A27F3DC3BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9DC0082F-040E-46DC-9169-5A27F3DC3BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DC0082F-040E-46DC-9169-5A27F3DC3BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,7 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{31C54A01-FAE2-44E7-A663-320298BD2B5B} = {00F77E4E-C1CC-41E8-911C-30CDC09750C0}
 		{9DC0082F-040E-46DC-9169-5A27F3DC3BBF} = {00F77E4E-C1CC-41E8-911C-30CDC09750C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
