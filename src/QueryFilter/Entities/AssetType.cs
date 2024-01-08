@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Samples.Common;
+using QueryFilter.Abstractions;
 
 namespace QueryFilter.Entities
 {

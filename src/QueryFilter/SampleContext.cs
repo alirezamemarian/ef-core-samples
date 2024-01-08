@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using QueryFilter.Abstractions;
 using QueryFilter.Entities;
-using Samples.Common;
 using System.Linq.Expressions;
 
 namespace QueryFilter

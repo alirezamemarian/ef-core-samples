@@ -1,8 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Samples.Common.FakeServices;
 
-namespace Samples.Common.Builders
+namespace Samples.Common
 {
     public sealed class SampleConsoleAppBuilder
     {
@@ -10,20 +9,7 @@ namespace Samples.Common.Builders
 
         internal SampleConsoleAppBuilder(string[] args)
         {
-            Services = new ServiceCollection()
-                .AddScoped<ICurrentUser, CurrentUser>();
-        }
-
-
-        public SampleConsoleAppBuilder AddFakeDbContext<T>()
-            where T : DbContext
-        {
-            Services.AddDbContext<T>(options => 
-            { 
-                options.UseSqlServer("Server=localhost;Database=FakeDb"); 
-            });
-
-            return this;
+            Services = new ServiceCollection();
         }
 
         public SampleConsoleApp Build()

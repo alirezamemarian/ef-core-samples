@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 
-namespace Samples.Common.Builders
+namespace Samples.Common
 {
-    public sealed class SampleConsoleApp
+    public sealed class SampleConsoleApp : IApp
     {
         public static SampleConsoleAppBuilder CreateBuilder(string[] args)
         {
@@ -17,17 +17,23 @@ namespace Samples.Common.Builders
         {
             ServiceProvider = serviceProvider;
 
-            var loggerFactory = LoggerFactory.Create(builder => builder.AddSimpleConsole());
+            var loggerFactory = LoggerFactory
+                .Create(builder => 
+                    builder.AddSimpleConsole(cfg =>
+                    {
+                        cfg.IncludeScopes = true;
+                    }));
+
             Logger = loggerFactory.CreateLogger("SampleConsoleApp");
         }
 
-        public void WaitForExit(Action<SampleConsoleApp> runDemo = null)
+        public IApp WaitForExit(Action<IApp> runDemo = null)
         {
             try
             {
                 runDemo?.Invoke(this);
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 Logger.LogError(exception, "An error occurred while running the demo.");
 
@@ -37,6 +43,8 @@ namespace Samples.Common.Builders
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+
+            return this;
         }
     }
 }

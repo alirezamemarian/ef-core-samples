@@ -1,4 +1,4 @@
-﻿namespace Samples.Common
+﻿namespace QueryFilter.Abstractions
 {
     public interface ISoftDelete
     {

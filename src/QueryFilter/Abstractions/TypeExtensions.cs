@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Samples.Common
+namespace QueryFilter.Abstractions
 {
     public static class TypeExtensions
     {
